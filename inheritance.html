@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+   class car
+   {
+    constructor(brand)
+    {
+        this.brand=brand
+    }
+    present()
+    {
+         return "I have a "+this.brand
+    }
+   }
+
+   class model extends car
+   {
+        constructor(brand,mod)
+        {
+            super(brand)
+            this.mod=mod
+   }
+   show()
+    {
+        return this.present()+". It is a "+this.mod
+    }
+ }
+
+ car1=new model("Ford","xxx")
+ document.getElementById("result").innerHTML=car1.show()
+    </script>
+</body>
+</html>
